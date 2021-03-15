@@ -31,6 +31,9 @@ public class Order {
    private Customer customer;
 
 
+   public Set<Payment> getPayments() {
+      return payments;
+   }
 
    public Order(double ORDAMOUNT, double ADVANCEAMOUNT, Customer cus, String ORDERDESCRIPTION) {
       this.ORDAMOUNT = ORDAMOUNT;

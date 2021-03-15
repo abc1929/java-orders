@@ -122,7 +122,12 @@ public class Customer {
    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL, orphanRemoval = true)
    private List<Order> orders = new ArrayList<>();
 
-  // AGENTCODE oreign key (one agent to many customers) not null
+   public List<Order> getOrders() {
+      return orders;
+   }
+
+
+   // AGENTCODE oreign key (one agent to many customers) not null
 
 
    public Agent getAgent() {
